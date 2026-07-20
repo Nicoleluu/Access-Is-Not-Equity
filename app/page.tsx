@@ -69,10 +69,10 @@ export default function Home() {
         <div className="section-no">04 / COMMUNITY OF PRACTICE</div>
         <h2>From explaining AI to questioning who can use explanation.</h2>
         <div className="practice-grid">
-          <article className="precedent"><small>PRECEDENT</small><h3>Google PAIR</h3><p>Makes machine-learning concepts understandable through explorable explanations.</p><b>EXTEND ↗</b></article>
-          <article><small>CRITICAL PEDAGOGY</small><h3>Paulo Freire<br/>bell hooks</h3><p>Learning as agency, dialogue, and the capacity to question.</p></article>
-          <article><small>DESIGN JUSTICE</small><h3>Sasha Costanza-Chock</h3><p>Challenges who benefits from design and who participates in its decisions.</p></article>
-          <article><small>CRITICAL AI</small><h3>Ruha Benjamin<br/>Safiya Noble</h3><p>Shows how technical systems reproduce existing structures of inequality.</p></article>
+          <article className="precedent"><small>PRECEDENT</small><h3><a className="reference-link" href="https://pair.withgoogle.com/" target="_blank" rel="noreferrer">Google PAIR <span>↗</span></a></h3><p>Makes machine-learning concepts understandable through explorable explanations.</p><b>EXTEND ↗</b></article>
+          <article><small>CRITICAL PEDAGOGY</small><h3><a className="reference-link" href="https://www.paulofreire.org/" target="_blank" rel="noreferrer">Paulo Freire <span>↗</span></a><br/><a className="reference-link" href="https://www.berea.edu/centers/the-bell-hooks-center" target="_blank" rel="noreferrer">bell hooks <span>↗</span></a></h3><p>Learning as agency, dialogue, and the capacity to question.</p></article>
+          <article><small>DESIGN JUSTICE</small><h3><a className="reference-link" href="https://mitpress.mit.edu/9780262043458/design-justice/" target="_blank" rel="noreferrer">Sasha Costanza-Chock <span>↗</span></a></h3><p>Challenges who benefits from design and who participates in its decisions.</p></article>
+          <article><small>CRITICAL AI</small><h3><a className="reference-link" href="https://www.ruhabenjamin.com/" target="_blank" rel="noreferrer">Ruha Benjamin <span>↗</span></a><br/><a className="reference-link" href="https://safiyaunoble.com/" target="_blank" rel="noreferrer">Safiya Noble <span>↗</span></a></h3><p>Shows how technical systems reproduce existing structures of inequality.</p></article>
         </div>
         <p className="position">My position: an extension and critique of <em>Measuring Fairness</em>—from unequal model outcomes to unequal human–AI relationships.</p>
       </section>
