@@ -1,5 +1,5 @@
 const nav = [
-  ["question", "Question"], ["fields", "Fields"], ["lineage", "Lineage"],
+  ["question", "Question"], ["keywords", "Keywords"], ["fields", "Fields"], ["lineage", "Lineage"],
   ["community", "Community"], ["situated", "Situated"], ["methods", "Methods"],
   ["experiments", "Experiments"], ["language", "Visual"],
   ["argument", "Argument"], ["outline", "Outline"], ["challenge", "Challenge"],
@@ -41,8 +41,11 @@ export default function Home() {
           <p>Does AI redistribute knowledge, or give greater advantages to people who already possess expertise?</p>
           <p>What forms of prior knowledge does productive AI use quietly assume?</p>
         </div>
-        <div className="keywords" aria-label="Five keywords">
-          {['knowledge inequality','artificial intelligence','accessibility','agency','learning'].map((k,i)=><span key={k}>{String(i+1).padStart(2,'0')} {k}</span>)}
+        <div id="keywords" className="keywords-block">
+          <div className="keywords-title">KEYWORDS</div>
+          <div className="keywords" aria-label="Five keywords">
+            {['knowledge inequality','artificial intelligence','accessibility','agency','learning'].map((k,i)=><span key={k}>{String(i+1).padStart(2,'0')} {k}</span>)}
+          </div>
         </div>
       </section>
 
