@@ -1,9 +1,9 @@
 const nav = [
   ["question", "Question"], ["fields", "Fields"], ["lineage", "Lineage"],
   ["community", "Community"], ["situated", "Situated"], ["methods", "Methods"],
-  ["experiments", "Experiments"], ["language", "Visual language"],
+  ["experiments", "Experiments"], ["language", "Visual"],
   ["argument", "Argument"], ["outline", "Outline"], ["challenge", "Challenge"],
-  ["exhibition", "Exhibition"],
+  ["exhibition", "Proposal"],
 ];
 
 const factors = [
@@ -137,7 +137,7 @@ export default function Home() {
       </section>
 
       <section id="exhibition" className="section exhibition">
-        <div className="section-no">12 / EXHIBITION COMPONENTS</div>
+        <div className="section-no">12 / PROPOSAL</div>
         <div className="exhibition-intro">
           <h2>Two physical ways to experience the same argument.</h2>
           <p>The drawing shows how inequality grows across a system. The material gesture lets the audience encounter that inequality through an everyday object.</p>
