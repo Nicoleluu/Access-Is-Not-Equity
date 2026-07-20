@@ -137,10 +137,36 @@ export default function Home() {
       </section>
 
       <section id="exhibition" className="section exhibition">
-        <div className="section-no">12 / EXHIBITION PROPOSALS</div>
+        <div className="section-no">12 / EXHIBITION COMPONENTS</div>
+        <div className="exhibition-intro">
+          <h2>Two physical ways to experience the same argument.</h2>
+          <p>The drawing shows how inequality grows across a system. The material gesture lets the audience encounter that inequality through an everyday object.</p>
+        </div>
         <div className="proposal-grid">
-          <article><small>VERTICAL DRAWING</small><h2>The Possibility Gap</h2><p>A tall datascape begins with one identical access point at the bottom, then splits into many paths. Vocabulary, language, mentorship, geography, and prior exposure accumulate as layers. Some paths expand into broad fields of possibility; others terminate, repeat, or disappear.</p><dl><dt>FORM</dt><dd>Dense computational diagram / mural</dd><dt>MATERIAL</dt><dd>Large format paper, 36 × 96 in.</dd><dt>VISUAL SYSTEM</dt><dd>Branching lines, uneven density, bilingual annotations</dd></dl></article>
-          <article><small>MATERIAL SPATIAL GESTURE</small><h2>The Same Tool</h2><p>Two identical keyboards sit beside the drawing, but each has a different set of available keys. One contains only basic commands; the other includes vocabulary, references, critique, and context. Both technically provide “access,” yet they make radically different actions possible.</p><dl><dt>FORM</dt><dd>Paired modified keyboards / key fields</dd><dt>MATERIAL</dt><dd>Two low cost keyboards, remapped keycaps, labels</dd><dt>SETUP</dt><dd>Placed together on one table beneath the mural</dd></dl></article>
+          <article>
+            <small>01 / PRINTED VERTICAL DRAWING</small>
+            <h2>The Possibility Gap</h2>
+            <p className="proposal-claim">One AI access point produces many unequal paths.</p>
+            <dl>
+              <dt>WHAT IT IS</dt><dd>A tall map that begins with two people using the same AI tool.</dd>
+              <dt>HOW IT WORKS</dt><dd>The paths divide as vocabulary, education, language, mentorship, and prior exposure accumulate.</dd>
+              <dt>WHAT VIEWERS SEE</dt><dd>One path expands into many possibilities. The other repeats, narrows, or stops.</dd>
+              <dt>WHAT IT SAYS</dt><dd>Equal access does not create equal opportunity.</dd>
+              <dt>MAKE WITH</dt><dd>36 × 96 inch paper, branching lines, nodes, labels, and English and Chinese text.</dd>
+            </dl>
+          </article>
+          <article>
+            <small>02 / MATERIAL GESTURE</small>
+            <h2>The Same Tool</h2>
+            <p className="proposal-claim">Two identical keyboards offer different abilities.</p>
+            <dl>
+              <dt>WHAT IT IS</dt><dd>A pair of modified keyboards placed beside the drawing.</dd>
+              <dt>HOW IT WORKS</dt><dd>One has only basic commands. The other includes vocabulary, references, critique, and context.</dd>
+              <dt>WHAT VIEWERS DO</dt><dd>Compare what each keyboard allows them to express, ask, and imagine.</dd>
+              <dt>WHAT IT SAYS</dt><dd>Having the same tool is not the same as knowing how to use its possibilities.</dd>
+              <dt>MAKE WITH</dt><dd>Two used keyboards, printed key labels, removable stickers, and one shared table.</dd>
+            </dl>
+          </article>
         </div>
       </section>
 
