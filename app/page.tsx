@@ -9,7 +9,7 @@ const nav = [
 const factors = [
   ["01", "Vocabulary", "Knowing the words that open a field."],
   ["02", "References", "Knowing what has already been imagined."],
-  ["03", "Judgment", "Knowing when an answer is useful—or wrong."],
+  ["03", "Judgment", "Knowing when an answer is useful or wrong."],
   ["04", "Mentorship", "Having someone who can reveal the next question."],
   ["05", "Confidence", "Believing you are entitled to ask at all."],
 ];
@@ -38,7 +38,7 @@ export default function Home() {
         <h2>When access to AI is widespread but the ability to benefit from it remains uneven, can AI truly be considered accessible?</h2>
         <div className="question-grid">
           <p>How does a person’s educational, cultural, geographic, and socioeconomic background shape what they can obtain from AI?</p>
-          <p>Does AI redistribute knowledge—or give greater advantages to people who already possess expertise?</p>
+          <p>Does AI redistribute knowledge, or give greater advantages to people who already possess expertise?</p>
           <p>What forms of prior knowledge does productive AI use quietly assume?</p>
         </div>
         <div className="keywords" aria-label="Five keywords">
@@ -50,7 +50,7 @@ export default function Home() {
         <div className="section-no">02 / INTERSECTING FIELDS</div>
         <div className="orbit" aria-label="Intersecting research fields">
           <div className="core">WHO CAN<br/>BENEFIT?</div>
-          <span className="o1">Human–AI interaction</span><span className="o2">Education</span>
+          <span className="o1">Human AI interaction</span><span className="o2">Education</span>
           <span className="o3">Knowledge equity</span><span className="o4">Critical AI studies</span>
           <span className="o5">Design research</span><span className="o6">Participatory design</span>
         </div>
@@ -69,19 +69,19 @@ export default function Home() {
         <div className="section-no">04 / COMMUNITY OF PRACTICE</div>
         <h2>From explaining AI to questioning who can use explanation.</h2>
         <div className="practice-grid">
-          <article className="precedent"><small>PRECEDENT</small><h3><a className="reference-link" href="https://pair.withgoogle.com/" target="_blank" rel="noreferrer">Google PAIR <span>↗</span></a></h3><p>Makes machine-learning concepts understandable through explorable explanations.</p><b>EXTEND ↗</b></article>
+          <article className="precedent"><small>PRECEDENT</small><h3><a className="reference-link" href="https://pair.withgoogle.com/" target="_blank" rel="noreferrer">Google PAIR <span>↗</span></a></h3><p>Makes machine learning concepts understandable through explorable explanations.</p><b>EXTEND ↗</b></article>
           <article><small>CRITICAL PEDAGOGY</small><h3><a className="reference-link" href="https://www.paulofreire.org/" target="_blank" rel="noreferrer">Paulo Freire <span>↗</span></a><br/><a className="reference-link" href="https://www.berea.edu/centers/the-bell-hooks-center" target="_blank" rel="noreferrer">bell hooks <span>↗</span></a></h3><p>Learning as agency, dialogue, and the capacity to question.</p></article>
-          <article><small>DESIGN JUSTICE</small><h3><a className="reference-link" href="https://mitpress.mit.edu/9780262043458/design-justice/" target="_blank" rel="noreferrer">Sasha Costanza-Chock <span>↗</span></a></h3><p>Challenges who benefits from design and who participates in its decisions.</p></article>
+          <article><small>DESIGN JUSTICE</small><h3><a className="reference-link" href="https://mitpress.mit.edu/9780262043458/design-justice/" target="_blank" rel="noreferrer">Sasha Costanza Chock <span>↗</span></a></h3><p>Challenges who benefits from design and who participates in its decisions.</p></article>
           <article><small>CRITICAL AI</small><h3><a className="reference-link" href="https://www.ruhabenjamin.com/" target="_blank" rel="noreferrer">Ruha Benjamin <span>↗</span></a><br/><a className="reference-link" href="https://safiyaunoble.com/" target="_blank" rel="noreferrer">Safiya Noble <span>↗</span></a></h3><p>Shows how technical systems reproduce existing structures of inequality.</p></article>
         </div>
-        <p className="position">My position: an extension and critique of <em>Measuring Fairness</em>—from unequal model outcomes to unequal human–AI relationships.</p>
+        <p className="position">My position: an extension and critique of <em>Measuring Fairness</em>, moving from unequal model outcomes to unequal human AI relationships.</p>
       </section>
 
       <section id="situated" className="section dark situated">
         <div className="section-no">05 / SITUATED TECHNOLOGY</div>
         <p className="quote">“Entering a design institution did not simply give me more information. It revealed possibilities, vocabularies, references, and standards of judgment that had previously been difficult to access.”</p>
         <div className="two-place"><div><b>TAIWAN</b><span>where my questions began</span></div><div><b>NEW YORK</b><span>where hidden structures became visible</span></div></div>
-        <p className="situated-note">This research grows from moving between educational contexts and recognizing that knowledge is not only information—it is also exposure, mentorship, language, confidence, and belonging.</p>
+        <p className="situated-note">This research grows from moving between educational contexts and recognizing that knowledge is not only information. It is also exposure, mentorship, language, confidence, and belonging.</p>
       </section>
 
       <section id="methods" className="section methods">
@@ -139,8 +139,8 @@ export default function Home() {
       <section id="exhibition" className="section exhibition">
         <div className="section-no">12 / EXHIBITION PROPOSALS</div>
         <div className="proposal-grid">
-          <article><small>VERTICAL DRAWING</small><h2>The Possibility Gap</h2><p>A tall data-scape begins with one identical access point at the bottom, then splits into many paths. Vocabulary, language, mentorship, geography, and prior exposure accumulate as layers. Some paths expand into broad fields of possibility; others terminate, repeat, or disappear.</p><dl><dt>FORM</dt><dd>Dense computational diagram / mural</dd><dt>MATERIAL</dt><dd>Large-format paper, 36 × 96 in.</dd><dt>VISUAL SYSTEM</dt><dd>Branching lines, uneven density, bilingual annotations</dd></dl></article>
-          <article><small>MATERIAL–SPATIAL GESTURE</small><h2>The Same Tool</h2><p>Two identical keyboards sit beside the drawing, but each has a different set of available keys. One contains only basic commands; the other includes vocabulary, references, critique, and context. Both technically provide “access,” yet they make radically different actions possible.</p><dl><dt>FORM</dt><dd>Paired modified keyboards / key fields</dd><dt>MATERIAL</dt><dd>Two low-cost keyboards, remapped keycaps, labels</dd><dt>SETUP</dt><dd>Placed together on one table beneath the mural</dd></dl></article>
+          <article><small>VERTICAL DRAWING</small><h2>The Possibility Gap</h2><p>A tall datascape begins with one identical access point at the bottom, then splits into many paths. Vocabulary, language, mentorship, geography, and prior exposure accumulate as layers. Some paths expand into broad fields of possibility; others terminate, repeat, or disappear.</p><dl><dt>FORM</dt><dd>Dense computational diagram / mural</dd><dt>MATERIAL</dt><dd>Large format paper, 36 × 96 in.</dd><dt>VISUAL SYSTEM</dt><dd>Branching lines, uneven density, bilingual annotations</dd></dl></article>
+          <article><small>MATERIAL SPATIAL GESTURE</small><h2>The Same Tool</h2><p>Two identical keyboards sit beside the drawing, but each has a different set of available keys. One contains only basic commands; the other includes vocabulary, references, critique, and context. Both technically provide “access,” yet they make radically different actions possible.</p><dl><dt>FORM</dt><dd>Paired modified keyboards / key fields</dd><dt>MATERIAL</dt><dd>Two low cost keyboards, remapped keycaps, labels</dd><dt>SETUP</dt><dd>Placed together on one table beneath the mural</dd></dl></article>
         </div>
       </section>
 
