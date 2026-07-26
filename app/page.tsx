@@ -3,7 +3,7 @@ const nav = [
   ["community", "Community"], ["situated", "Situated"], ["methods", "Methods"],
   ["experiments", "Experiments"], ["language", "Visual"],
   ["argument", "Argument"], ["outline", "Outline"], ["challenge", "Challenge"],
-  ["exhibition", "Proposal"],
+  ["exhibition", "Exhibition"],
 ];
 
 const factors = [
@@ -25,7 +25,7 @@ export default function Home() {
       </header>
 
       <section id="top" className="hero section dark">
-        <p className="eyebrow">Research Foundations + Project Outline · Draft 01</p>
+        <p className="eyebrow">Research Foundations + Project Outline · Draft 02</p>
         <h1>ACCESS<br/><span>≠</span> EQUITY</h1>
         <p className="hero-line">Everyone may reach the same AI. Not everyone can reach the same possibilities.</p>
         <div className="equal-start" aria-label="Two equal access points leading to unequal outcomes">
@@ -140,35 +140,55 @@ export default function Home() {
       </section>
 
       <section id="exhibition" className="section exhibition">
-        <div className="section-no">12 / PROPOSAL</div>
+        <div className="section-no">12 / EXHIBITION PLAN · CONFIRMED</div>
         <div className="exhibition-intro">
-          <h2>Two physical ways to experience the same argument.</h2>
-          <p>The drawing shows how inequality grows across a system. The material gesture lets the audience encounter that inequality through an everyday object.</p>
+          <h2>Different knowledge.<br/>Different starting points.</h2>
+          <p>A collective mural and a physical population make the universal user impossible.</p>
         </div>
         <div className="proposal-grid">
-          <article>
-            <small>01 / PRINTED VERTICAL DRAWING</small>
-            <h2>The Possibility Gap</h2>
-            <p className="proposal-claim">One AI access point produces many unequal paths.</p>
-            <dl>
-              <dt>WHAT IT IS</dt><dd>A tall map that begins with two people using the same AI tool.</dd>
-              <dt>HOW IT WORKS</dt><dd>The paths divide as vocabulary, education, language, mentorship, and prior exposure accumulate.</dd>
-              <dt>WHAT VIEWERS SEE</dt><dd>One path expands into many possibilities. The other repeats, narrows, or stops.</dd>
-              <dt>WHAT IT SAYS</dt><dd>Equal access does not create equal opportunity.</dd>
-              <dt>MAKE WITH</dt><dd>36 × 96 inch paper, branching lines, nodes, labels, and English and Chinese text.</dd>
-            </dl>
+          <article className="drawing-plan">
+            <small>01 / VERTICAL MURAL · CONFIRMED</small>
+            <h2>A Crowd of Knowledge</h2>
+            <p className="proposal-claim">Everyone arrives with knowledge. Not every form is recognized equally.</p>
+            <a className="wip-preview" href="https://drive.google.com/file/d/1bBB-Lwr0elVDcYkSyRm95Fyuw-bcmrub/view?usp=sharing" target="_blank" rel="noreferrer">
+              <img src="mural-wip-02.png" alt="Planning outline for a vertical mural with labeled composition zones, figure placeholders, and content notes" />
+              <span>OPEN PLANNING OUTLINE WIP 02 ↗</span>
+            </a>
+            <a className="figma-link" href="https://www.figma.com/design/DnreENS6YElFGscQWENnEP" target="_blank" rel="noreferrer">EDITABLE FIGMA OUTLINE ↗</a>
+            <div className="confirmation-strip">
+              <span><b>36 × 96 IN</b> vertical</span>
+              <span><b>FULL COLOR</b> digital collage</span>
+              <span><b>MATTE</b> uncoated bond</span>
+              <span><b>INSTALL</b> rail clips</span>
+            </div>
           </article>
-          <article>
-            <small>02 / MATERIAL GESTURE</small>
-            <h2>The Same Tool</h2>
-            <p className="proposal-claim">Two identical keyboards offer different abilities.</p>
-            <dl>
-              <dt>WHAT IT IS</dt><dd>A pair of modified keyboards placed beside the drawing.</dd>
-              <dt>HOW IT WORKS</dt><dd>One has only basic commands. The other includes vocabulary, references, critique, and context.</dd>
-              <dt>WHAT VIEWERS DO</dt><dd>Compare what each keyboard allows them to express, ask, and imagine.</dd>
-              <dt>WHAT IT SAYS</dt><dd>Having the same tool is not the same as knowing how to use its possibilities.</dd>
-              <dt>MAKE WITH</dt><dd>Two used keyboards, printed key labels, removable stickers, and one shared table.</dd>
-            </dl>
+          <article className="material-plan">
+            <small>02 / MATERIAL GESTURE · CONFIRMED</small>
+            <h2>A Population of Starting Points</h2>
+            <p className="proposal-claim">Composite profiles make different backgrounds physical.</p>
+            <div className="profile-stage" aria-label="Setup mockup showing composite profile cards arranged as a physical population">
+              {[
+                ["01","TAIPEI","LANGUAGE · CRAFT · CARE"],
+                ["02","QUEENS","WORK · COMMUNITY · BILINGUAL"],
+                ["03","BROOKLYN","CODE · GAMES · SELF TAUGHT"],
+                ["04","BRONX","TEACHING · FAMILY · MEDIA"],
+                ["05","NEW YORK","DESIGN · SCHOOL · MENTORSHIP"],
+                ["06","ONLINE","FANDOM · VIDEO · MAKING"],
+              ].map(([n,place,knowledge])=>
+                <div className="profile-card" key={n}>
+                  <b>{n}</b><span>{place}</span><small>{knowledge}</small>
+                </div>
+              )}
+              <p>COMPOSITE PROFILES / DIFFERENT KNOWLEDGE CONFIGURATIONS</p>
+            </div>
+            <div className="setup-plan">
+              <div><b>PLACE</b><span>Beside mural on one shared table</span></div>
+              <div><b>MAKE</b><span>30–50 printed composite profile cards</span></div>
+              <div><b>ARRANGE</b><span>One continuous field, not two ranked groups</span></div>
+              <div><b>VIEWER</b><span>Pick up and compare different starting conditions</span></div>
+              <div><b>POWER</b><span>None required</span></div>
+              <div><b>SETUP</b><span>10 minutes; cards secured with museum putty</span></div>
+            </div>
           </article>
         </div>
       </section>
