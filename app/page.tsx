@@ -1,19 +1,19 @@
 const resources = [
-  { code: "EDU", name: "design education", note: "ways to learn the language of a field" },
-  { code: "CUL", name: "cultural exposure", note: "museums, exhibitions, archives, references" },
-  { code: "SPA", name: "space + tools", note: "libraries, software, studios, maker spaces" },
-  { code: "NET", name: "people + networks", note: "mentors, peers, introductions, belonging" },
-  { code: "TIM", name: "time + money", note: "the ability to practice, travel, and take risks" },
-  { code: "JOB", name: "opportunity", note: "internships, design firms, titles, salaries" },
+  "Design education",
+  "Cultural resources",
+  "Spaces and tools",
+  "People and networks",
+  "Time and money",
+  "Job opportunities",
 ];
 
 const bagFragments = [
-  ["ADMIT ONE", "museum ticket", "CUL"],
-  ["OPEN STUDIO", "maker space address", "SPA"],
-  ["BFA / MFA", "art school information", "EDU"],
-  ["DESIGNER I", "entry level job listing", "JOB"],
-  ["PORTFOLIO NIGHT", "industry event", "NET"],
-  ["AVG. PAY", "designer salary", "INC"],
+  ["ADMIT ONE", "museum ticket", "Cultural resources"],
+  ["OPEN STUDIO", "maker space address", "Spaces and tools"],
+  ["DESIGN DEGREE", "art school information", "Design education"],
+  ["DESIGNER I", "entry level job listing", "Job opportunities"],
+  ["PORTFOLIO NIGHT", "industry event", "People and networks"],
+  ["AVERAGE PAY", "designer salary", "Income and cost"],
 ];
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
     <main id="top">
       <header className="site-header">
         <a className="wordmark" href="#top">ACCESS IS NOT EQUITY</a>
-        <span className="status"><i /> WORKING IDEA · 30 JUL 2026</span>
+        <span className="status"><i /> WORKING IDEA · 30 JULY 2026</span>
         <nav aria-label="Page sections">
           <a href="#question">Question</a>
           <a href="#layers">Layers</a>
@@ -74,8 +74,8 @@ export default function Home() {
 
       <section id="layers" className="layers-section">
         <div className="layers-head">
-          <p className="margin-label">TWO PARTS OF MEANINGFUL ACCESS</p>
-          <h2>What you bring. What surrounds you.</h2>
+          <p className="margin-label">WHAT SHAPES ACCESS</p>
+          <h2>Your background and the resources around you.</h2>
           <p>
             Location matters because it connects a person to particular
             institutions, communities, costs, languages, and opportunities. It
@@ -87,21 +87,21 @@ export default function Home() {
           <div className="map-grid" />
           <div className="same-tool"><span>BEFORE THE AI INTERFACE</span><b>MEANINGFUL ACCESS</b></div>
           <div className="country-column country-a">
-            <header><small>PART / 01</small><h3>STARTING CONDITIONS</h3><p>what a person arrives with</p></header>
+            <header><small>WHAT A PERSON BRINGS</small><h3>STARTING CONDITIONS</h3><p>A person&apos;s background and circumstances</p></header>
             <div className="country-resources">
               {[
-                ["LOC","location"],["LAN","language"],["FAM","family background"],
-                ["CLS","social class"],["EDU","prior education"],["TIM","time + money"],
-              ].map(([code,name]) => <span key={code}><b>{code}</b>{name}</span>)}
+                "Location", "Language", "Family background",
+                "Social class", "Prior education", "Time and money",
+              ].map((name) => <span key={name}>{name}</span>)}
             </div>
-            <footer>BACKGROUND / EXPERIENCE / POSITION</footer>
+            <footer>THE CONDITIONS A PERSON STARTS WITH</footer>
           </div>
           <div className="country-column country-b">
-            <header><small>PART / 02</small><h3>RESOURCE ENVIRONMENT</h3><p>what is available around a person</p></header>
+            <header><small>WHAT SURROUNDS A PERSON</small><h3>RESOURCE ENVIRONMENT</h3><p>Resources and opportunities available around a person</p></header>
             <div className="country-resources">
-              {resources.map((item) => <span key={item.code}><b>{item.code}</b>{item.name}</span>)}
+              {resources.map((item) => <span key={item}>{item}</span>)}
             </div>
-            <footer>LEARNING / CULTURE / NETWORKS / OPPORTUNITY</footer>
+            <footer>THE RESOURCES A PERSON CAN USE</footer>
           </div>
           <div className="field-note">These conditions overlap and shape each other.</div>
         </div>
@@ -158,23 +158,23 @@ export default function Home() {
           </div>
           <div className="before-prompt-plan" aria-label="Planning outline for the Before the Prompt vertical drawing">
             <header>
-              <small>DRAWING STRUCTURE / TOP TO BOTTOM</small>
-              <strong>THE USER IS NOT<br />THE STARTING POINT.</strong>
+              <small>PLANNED DRAWING CONTENT</small>
+              <strong>WHAT SHAPES A PERSON<br />BEFORE THEY USE AI?</strong>
             </header>
             <ol>
-              <li><b>01</b><div><strong>STARTING CONTEXT</strong><span>location · language · social class · family · prior education</span><small>Where does a person begin?</small></div></li>
-              <li><b>02</b><div><strong>EXPOSURE</strong><span>museums · books · exhibitions · objects · ways of making</span><small>What have they had opportunities to encounter?</small></div></li>
-              <li><b>03</b><div><strong>LEARNING</strong><span>vocabulary · technical skills · references · research methods</span><small>What knowledge have they been able to develop?</small></div></li>
-              <li><b>04</b><div><strong>GUIDANCE</strong><span>teachers · mentors · peers · critique · professional networks</span><small>Who helps reveal the next possibility?</small></div></li>
-              <li><b>05</b><div><strong>JUDGMENT</strong><span>compare · question · reject · revise · apply</span><small>How do they decide whether an AI answer is useful?</small></div></li>
-              <li><b>06</b><div><strong>CONFIDENCE + AGENCY</strong><span>curiosity · belonging · intention · independent decisions</span><small>Do they feel able to participate and direct the tool?</small></div></li>
-              <li><b>07</b><div><strong>FORMING THE PROMPT</strong><span>context · vocabulary · references · constraints · intention</span><small>What prior knowledge is already contained in a question?</small></div></li>
-              <li className="interface-layer"><b>08</b><div><strong>THE SAME AI INTERFACE</strong><span>open AI → log in → enter a prompt</span><small>The visible access point appears last.</small></div></li>
+              <li><b>01</b><div><strong>BACKGROUND AND CIRCUMSTANCES</strong><span>location · language · social class · family · prior education</span><small>Where does a person begin?</small></div></li>
+              <li><b>02</b><div><strong>WHAT THEY HAVE SEEN</strong><span>museums · books · exhibitions · objects · ways of making</span><small>What have they had opportunities to encounter?</small></div></li>
+              <li><b>03</b><div><strong>WHAT THEY HAVE LEARNED</strong><span>vocabulary · technical skills · references · research methods</span><small>What knowledge have they been able to develop?</small></div></li>
+              <li><b>04</b><div><strong>TEACHERS AND SUPPORT</strong><span>teachers · mentors · peers · critique · professional networks</span><small>Who helps them find the next opportunity?</small></div></li>
+              <li><b>05</b><div><strong>EVALUATING AI ANSWERS</strong><span>compare · question · reject · revise · apply</span><small>How do they decide whether an AI answer is useful?</small></div></li>
+              <li><b>06</b><div><strong>CONFIDENCE AND DECISION MAKING</strong><span>curiosity · belonging · intention · independent decisions</span><small>Do they feel able to direct the tool?</small></div></li>
+              <li><b>07</b><div><strong>CREATING A QUESTION FOR AI</strong><span>context · vocabulary · references · constraints · intention</span><small>What prior knowledge is already contained in a question?</small></div></li>
+              <li className="interface-layer"><b>08</b><div><strong>USING THE AI TOOL</strong><span>open AI → log in → enter a prompt</span><small>The visible access point appears last.</small></div></li>
             </ol>
             <footer>
               <span>SAME PROMPT BOX</span>
               <strong>≠</strong>
-              <span>SAME ACCESS TO POSSIBILITY</span>
+              <span>SAME ABILITY TO USE AI</span>
             </footer>
           </div>
         </article>
@@ -190,7 +190,7 @@ export default function Home() {
           </div>
           <div className="bag-sample">
             <div className="bag-handle" />
-            <p>RESOURCE ENVIRONMENT / A · CATEGORY / EDUCATION</p>
+            <p>RESOURCE ENVIRONMENT ONE · CATEGORY / DESIGN EDUCATION</p>
             {bagFragments.map(([title, note, code], index) => (
               <span className={`fragment f${index + 1}`} key={title}>
                 <b>{title}</b><small>{note}</small><i>{code}</i>
@@ -199,7 +199,7 @@ export default function Home() {
           </div>
           <div className="material-outline">
             <section>
-              <small>UNIT OF COMPARISON</small>
+              <small>HOW THE BAGS ARE ORGANIZED</small>
               <h4>One bag = one category</h4>
               <p>The display is divided into two resource environment sections. Each section repeats the same set of labeled category bags so equivalent resources can be compared across two situated case studies.</p>
             </section>
@@ -213,9 +213,12 @@ export default function Home() {
               </div>
             </section>
             <section>
-              <small>LABELING SYSTEM</small>
+              <small>HOW EACH BAG IS LABELED</small>
               <p>Each resource environment section is clearly titled. Every bag is labeled by category, and every printed fragment includes its source, date, and value when relevant. Category labels repeat across both sections.</p>
-              <div className="label-key"><b>EDU</b><b>CUL</b><b>SPA</b><b>NET</b><b>JOB</b><b>INC</b></div>
+              <div className="label-key">
+                <b>Design education</b><b>Cultural resources</b><b>Spaces and tools</b>
+                <b>People and networks</b><b>Job opportunities</b><b>Income and cost</b>
+              </div>
             </section>
             <section>
               <small>HOW COMPARISON WORKS</small>
