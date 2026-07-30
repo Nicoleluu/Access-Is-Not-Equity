@@ -32,10 +32,14 @@ export default function Home() {
       <section className="hero">
         <p className="kicker">A developing investigation by Nicole Lu</p>
         <h1>
-          Accessibility starts<br />
-          before you open the <span>tool.</span>
+          What does it mean for AI<br />
+          to be <span>accessible?</span>
         </h1>
-        <p className="turn">What prepares one person to use it<br />while another is left to catch up?</p>
+        <p className="turn">
+          Is availability enough, or does accessibility also depend on the
+          knowledge, resources, support, and opportunities surrounding the
+          person using it?
+        </p>
         <div className="hero-foot">
           <span>AI + ACCESS + ENVIRONMENT</span>
           <a href="#question">follow the question ↓</a>
