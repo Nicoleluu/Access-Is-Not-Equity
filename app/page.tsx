@@ -145,16 +145,57 @@ export default function Home() {
 
         <article className="form drawing-form">
           <div className="form-index">02</div>
-          <div>
+          <div className="drawing-summary">
             <small>PRINTED VERTICAL DRAWING · IN DEVELOPMENT</small>
-            <h3>A comparison of design ecosystems</h3>
-            <p>A long data field comparing the resources and professional pathways available in different countries—not the distance between them. The country pair and final dataset still need to be confirmed.</p>
+            <h3>Before the Prompt</h3>
+            <p className="drawing-question">What happens before a person reaches an AI prompt?</p>
+            <p>The drawing looks at the layers that shape a person approaching AI—not the technical layers behind the AI system.</p>
+            <blockquote>By the time someone reaches the same prompt box, their access has already been shaped by unequal experiences, knowledge, relationships, and opportunities.</blockquote>
+            <div className="drawing-meta">
+              <span><b>FORMAT</b>36 × 96 in. vertical print</span>
+              <span><b>FORM</b>Informal mixed-media data drawing</span>
+              <span><b>READING</b>Accumulation from context to interface</span>
+              <span><b>STATUS</b>Structure WIP; content not final</span>
+            </div>
           </div>
-          <div className="map-sample ecosystem-sample" aria-label="Conceptual sketch for a printed comparison of national design ecosystems">
-            <div className="sample-tool">SAME AI TOOL</div>
-            <div className="sample-country"><b>COUNTRY / 01</b><span>EDUCATION</span><span>INDUSTRY</span><span>JOBS</span><span>SALARY</span><span>CULTURE</span></div>
-            <div className="sample-country"><b>COUNTRY / 02</b><span>EDUCATION</span><span>INDUSTRY</span><span>JOBS</span><span>SALARY</span><span>CULTURE</span></div>
-            <strong>WHAT DIFFERENCES BECOME VISIBLE?</strong>
+          <div className="before-prompt-plan" aria-label="Planning outline for the Before the Prompt vertical drawing">
+            <header>
+              <small>DRAWING STRUCTURE / TOP TO BOTTOM</small>
+              <strong>THE USER IS NOT<br />THE STARTING POINT.</strong>
+            </header>
+            <ol>
+              <li><b>01</b><div><strong>STARTING CONTEXT</strong><span>country · language · social class · family · prior education</span><small>Where does a person begin?</small></div></li>
+              <li><b>02</b><div><strong>EXPOSURE</strong><span>museums · books · exhibitions · objects · ways of making</span><small>What have they had opportunities to encounter?</small></div></li>
+              <li><b>03</b><div><strong>LEARNING</strong><span>vocabulary · technical skills · references · research methods</span><small>What knowledge have they been able to develop?</small></div></li>
+              <li><b>04</b><div><strong>GUIDANCE</strong><span>teachers · mentors · peers · critique · professional networks</span><small>Who helps reveal the next possibility?</small></div></li>
+              <li><b>05</b><div><strong>JUDGMENT</strong><span>compare · question · reject · revise · apply</span><small>How do they decide whether an AI answer is useful?</small></div></li>
+              <li><b>06</b><div><strong>CONFIDENCE + AGENCY</strong><span>curiosity · belonging · intention · independent decisions</span><small>Do they feel able to participate and direct the tool?</small></div></li>
+              <li><b>07</b><div><strong>FORMING THE PROMPT</strong><span>context · vocabulary · references · constraints · intention</span><small>What prior knowledge is already contained in a question?</small></div></li>
+              <li className="interface-layer"><b>08</b><div><strong>THE SAME AI INTERFACE</strong><span>open AI → log in → enter a prompt</span><small>The visible access point appears last.</small></div></li>
+            </ol>
+            <footer>
+              <span>SAME PROMPT BOX</span>
+              <strong>≠</strong>
+              <span>SAME ACCESS TO POSSIBILITY</span>
+            </footer>
+          </div>
+          <div className="drawing-support">
+            <section>
+              <small>VISUAL APPROACH</small>
+              <p>Handwritten notes, scanned learning materials, prompt fragments, corrections, erased attempts, small data labels, transparent overlaps, dense and empty areas.</p>
+            </section>
+            <section>
+              <small>EVIDENCE TO COLLECT</small>
+              <p>Design syllabi, critique vocabulary, prompt revisions, annotated AI outputs, personal reflections, mentorship stories, and definitions of access and agency.</p>
+            </section>
+            <section>
+              <small>RELATIONSHIP TO THE BAGS</small>
+              <p><b>Drawing:</b> what may accumulate inside a person before AI.<br/><b>Bags:</b> how external design resources differ between countries.</p>
+            </section>
+            <section>
+              <small>OPEN FOR THE MEETING</small>
+              <p>Which three or four layers need the most emphasis? Should several pathways overlap? How can absence appear without representing a person as deficient?</p>
+            </section>
           </div>
         </article>
 
