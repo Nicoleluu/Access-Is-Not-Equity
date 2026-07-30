@@ -9,9 +9,9 @@ const resources = [
 
 const bagFragments = [
   ["ADMIT ONE", "museum ticket", "CUL"],
-  ["OPEN STUDIO", "maker-space address", "SPA"],
-  ["BFA / MFA", "art-school information", "EDU"],
-  ["DESIGNER I", "entry-level job listing", "JOB"],
+  ["OPEN STUDIO", "maker space address", "SPA"],
+  ["BFA / MFA", "art school information", "EDU"],
+  ["DESIGNER I", "entry level job listing", "JOB"],
   ["PORTFOLIO NIGHT", "industry event", "NET"],
   ["AVG. PAY", "designer salary", "INC"],
 ];
@@ -37,7 +37,7 @@ export default function Home() {
         </h1>
         <p className="turn">But what surrounds you<br />before you open it?</p>
         <div className="hero-foot">
-          <span>AI + DESIGN + LOCATION</span>
+          <span>AI + ACCESS + ENVIRONMENT</span>
           <a href="#question">follow the question ↓</a>
         </div>
         <div className="locator locator-a">40.7128° N</div>
@@ -48,11 +48,12 @@ export default function Home() {
       <section id="question" className="question-section">
         <p className="margin-label">THE QUESTION / FOR NOW</p>
         <div className="question-copy">
-          <h2>How does the country you live in shape what you can do with AI?</h2>
+          <h2>How do your starting conditions and resource environment shape what you can do with AI?</h2>
           <p>
-            Logging in is one kind of access. Knowing what to ask, what to notice,
-            and where an answer might lead is another. Those abilities develop
-            inside unequal educational, cultural, and professional systems.
+            Starting conditions include background, location, language, prior
+            education, and financial stability. A resource environment includes
+            the learning, cultural, social, and professional opportunities that
+            surround a person.
           </p>
         </div>
         <div className="access-compare">
@@ -73,38 +74,41 @@ export default function Home() {
 
       <section id="layers" className="layers-section">
         <div className="layers-head">
-          <p className="margin-label">COUNTRY AS A FIRST LAYER</p>
-          <h2>The same tool enters different ecosystems.</h2>
+          <p className="margin-label">TWO PARTS OF MEANINGFUL ACCESS</p>
+          <h2>What you bring. What surrounds you.</h2>
           <p>
-            I am not comparing distances between places. I am asking how the
-            country someone lives in shapes the design resources and pathways
-            available to them.
+            Location matters because it connects a person to particular
+            institutions, communities, costs, languages, and opportunities. It
+            is one condition among many, not a complete explanation.
           </p>
         </div>
 
-        <div className="field country-field" aria-label="A conceptual comparison of two national design ecosystems">
+        <div className="field country-field" aria-label="Starting conditions and resource environment">
           <div className="map-grid" />
-          <div className="same-tool"><span>SAME GENERATIVE AI PLATFORM</span><b>ONE INTERFACE</b></div>
+          <div className="same-tool"><span>BEFORE THE AI INTERFACE</span><b>MEANINGFUL ACCESS</b></div>
           <div className="country-column country-a">
-            <header><small>POSSIBLE STUDY / 01</small><h3>TAIWAN</h3><p>national + regional context</p></header>
+            <header><small>PART / 01</small><h3>STARTING CONDITIONS</h3><p>what a person arrives with</p></header>
             <div className="country-resources">
-              {resources.map((item) => <span key={item.code}><b>{item.code}</b>{item.name}</span>)}
+              {[
+                ["LOC","location"],["LAN","language"],["FAM","family background"],
+                ["CLS","social class"],["EDU","prior education"],["TIM","time + money"],
+              ].map(([code,name]) => <span key={code}><b>{code}</b>{name}</span>)}
             </div>
-            <footer>COLLECT DATA / FIND PATTERNS / DO NOT ASSUME</footer>
+            <footer>BACKGROUND / EXPERIENCE / POSITION</footer>
           </div>
           <div className="country-column country-b">
-            <header><small>POSSIBLE STUDY / 02</small><h3>UNITED STATES</h3><p>national + regional context</p></header>
+            <header><small>PART / 02</small><h3>RESOURCE ENVIRONMENT</h3><p>what is available around a person</p></header>
             <div className="country-resources">
               {resources.map((item) => <span key={item.code}><b>{item.code}</b>{item.name}</span>)}
             </div>
-            <footer>USE THE SAME CATEGORIES / COMPARE CONDITIONS</footer>
+            <footer>LEARNING / CULTURE / NETWORKS / OPPORTUNITY</footer>
           </div>
-          <div className="field-note">possible comparison — countries not confirmed yet</div>
+          <div className="field-note">These conditions overlap and shape each other.</div>
         </div>
 
         <div className="working-chain">
-          <span>COUNTRY CONTEXT</span><i />
-          <span>DESIGN ECOSYSTEM</span><i />
+          <span>STARTING CONDITIONS</span><i />
+          <span>RESOURCE ENVIRONMENT</span><i />
           <span>KNOWLEDGE + OPPORTUNITY</span><i />
           <span>MEANINGFUL AI USE</span>
         </div>
@@ -149,7 +153,7 @@ export default function Home() {
             <small>PRINTED VERTICAL DRAWING · IN DEVELOPMENT</small>
             <h3>Before the Prompt</h3>
             <p className="drawing-question">What happens before a person reaches an AI prompt?</p>
-            <p>The drawing looks at the layers that shape a person approaching AI—not the technical layers behind the AI system.</p>
+            <p>The drawing looks at the layers that shape a person approaching AI. It does not examine the technical layers behind the AI system.</p>
             <blockquote>By the time someone reaches the same prompt box, their access has already been shaped by unequal experiences, knowledge, relationships, and opportunities.</blockquote>
           </div>
           <div className="before-prompt-plan" aria-label="Planning outline for the Before the Prompt vertical drawing">
@@ -158,7 +162,7 @@ export default function Home() {
               <strong>THE USER IS NOT<br />THE STARTING POINT.</strong>
             </header>
             <ol>
-              <li><b>01</b><div><strong>STARTING CONTEXT</strong><span>country · language · social class · family · prior education</span><small>Where does a person begin?</small></div></li>
+              <li><b>01</b><div><strong>STARTING CONTEXT</strong><span>location · language · social class · family · prior education</span><small>Where does a person begin?</small></div></li>
               <li><b>02</b><div><strong>EXPOSURE</strong><span>museums · books · exhibitions · objects · ways of making</span><small>What have they had opportunities to encounter?</small></div></li>
               <li><b>03</b><div><strong>LEARNING</strong><span>vocabulary · technical skills · references · research methods</span><small>What knowledge have they been able to develop?</small></div></li>
               <li><b>04</b><div><strong>GUIDANCE</strong><span>teachers · mentors · peers · critique · professional networks</span><small>Who helps reveal the next possibility?</small></div></li>
@@ -181,12 +185,12 @@ export default function Home() {
             <small>MATERIAL GESTURE · EARLY TEST</small>
             <h3>Bags of surrounding resources</h3>
             <p className="material-question">What resources surround an emerging designer before they approach AI?</p>
-            <p>The installation has two country sections. Within each section, every transparent bag represents one resource category through collected printed evidence.</p>
-            <blockquote>The same AI tool can enter countries with very different educational, cultural, and professional conditions.</blockquote>
+            <p>The installation compares two resource environments situated in different locations. Within each section, every transparent bag represents one resource category through collected printed evidence.</p>
+            <blockquote>People can approach the same AI tool from very different educational, cultural, social, and professional environments.</blockquote>
           </div>
           <div className="bag-sample">
             <div className="bag-handle" />
-            <p>COUNTRY / 01 · CATEGORY / EDUCATION</p>
+            <p>RESOURCE ENVIRONMENT / A · CATEGORY / EDUCATION</p>
             {bagFragments.map(([title, note, code], index) => (
               <span className={`fragment f${index + 1}`} key={title}>
                 <b>{title}</b><small>{note}</small><i>{code}</i>
@@ -197,7 +201,7 @@ export default function Home() {
             <section>
               <small>UNIT OF COMPARISON</small>
               <h4>One bag = one category</h4>
-              <p>The display is divided into two country sections. Each section repeats the same set of labeled category bags so equivalent resources can be compared across the two countries.</p>
+              <p>The display is divided into two resource environment sections. Each section repeats the same set of labeled category bags so equivalent resources can be compared across two situated case studies.</p>
             </section>
             <section>
               <small>WHAT GOES INSIDE</small>
@@ -210,7 +214,7 @@ export default function Home() {
             </section>
             <section>
               <small>LABELING SYSTEM</small>
-              <p>Each country section is clearly titled. Every bag is labeled by category, and every printed fragment includes its source, date, and value when relevant. Category labels repeat across both sections.</p>
+              <p>Each resource environment section is clearly titled. Every bag is labeled by category, and every printed fragment includes its source, date, and value when relevant. Category labels repeat across both sections.</p>
               <div className="label-key"><b>EDU</b><b>CUL</b><b>SPA</b><b>NET</b><b>JOB</b><b>INC</b></div>
             </section>
             <section>
@@ -226,7 +230,7 @@ export default function Home() {
         <h2>This project is not trying to solve unequal access yet.</h2>
         <div className="open-grid">
           <p><b>WHO?</b><span>Which emerging designers am I talking about?</span></p>
-          <p><b>WHERE?</b><span>Which two countries make a responsible and meaningful comparison?</span></p>
+          <p><b>WHERE?</b><span>Which two locations or communities make a responsible and meaningful comparison?</span></p>
           <p><b>WHAT?</b><span>Which resources actually shape meaningful AI use?</span></p>
           <p><b>HOW?</b><span>How can I compare without reducing people to profiles?</span></p>
         </div>
