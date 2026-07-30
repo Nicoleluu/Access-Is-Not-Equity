@@ -229,15 +229,17 @@ export default function Home() {
       </section>
 
       <section className="open-section">
-        <p className="margin-label">STILL OPEN</p>
-        <h2>This project is not trying to solve unequal access yet.</h2>
+        <p className="margin-label">PROJECT DIRECTION</p>
+        <h2>Understand the gap. Then design a way to reduce it.</h2>
         <div className="open-grid">
-          <p><b>WHO?</b><span>Which emerging designers am I talking about?</span></p>
-          <p><b>WHERE?</b><span>Which two locations or communities make a responsible and meaningful comparison?</span></p>
-          <p><b>WHAT?</b><span>Which resources actually shape meaningful AI use?</span></p>
-          <p><b>HOW?</b><span>How can I compare without reducing people to profiles?</span></p>
+          <p><b>DEFINE</b><span>Define what meaningful access to AI means in this project.</span></p>
+          <p><b>INVESTIGATE</b><span>Study how starting conditions and resource environments shape access.</span></p>
+          <p><b>DIAGNOSE</b><span>Identify specific gaps in knowledge, resources, support, and opportunity.</span></p>
+          <p><b>DEVELOP</b><span>Explore a tool, platform, or learning system that responds to those gaps.</span></p>
+          <p><b>TEST</b><span>Evaluate whether the design helps people prepare, make informed decisions, and use AI more meaningfully.</span></p>
+          <p><b>REFINE</b><span>Improve the design based on what the research and testing reveal.</span></p>
         </div>
-        <p className="closing-line">For now, I am learning how to see the conditions around the tool.</p>
+        <p className="closing-line">The goal is not to give everyone an identical background. The goal is to reduce avoidable barriers and help more people build the knowledge and support they need.</p>
       </section>
 
       <footer>

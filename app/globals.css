@@ -138,7 +138,7 @@ a { color: inherit; }
 .open-section { padding: 100px 4vw 60px; background: var(--warm); }
 .open-section h2 { max-width: 1200px; margin: 85px 0 110px; }
 .open-grid { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid; }
-.open-grid p { margin: 0; padding: 18px 12px; display: grid; grid-template-columns: 70px 1fr; border-bottom: 1px solid; font-size: 18px; }
+.open-grid p { margin: 0; padding: 18px 12px; display: grid; grid-template-columns: 125px 1fr; border-bottom: 1px solid; font-size: 18px; }
 .open-grid p:nth-child(odd) { border-right: 1px solid; }
 .open-grid b { font-size: 10px; letter-spacing: .12em; }
 .closing-line { margin: 120px 0 30px; max-width: 850px; font-family: Georgia, serif; font-style: italic; font-size: clamp(28px,4vw,58px); line-height: 1.05; }
@@ -167,7 +167,7 @@ footer a { color: var(--signal); }
   .form { grid-template-columns: 30px 1fr; gap: 14px; }.bag-sample { margin-left: 0; margin-right: 0; }
   .before-prompt-plan li div { grid-template-columns: 1fr; }.before-prompt-plan li small { grid-column: 1; }
   .material-outline { grid-template-columns: 1fr; }.material-outline section { border-right: 0; }
-  .open-grid p { grid-template-columns: 48px 1fr; font-size: 15px; }
+  .open-grid p { grid-template-columns: 95px 1fr; font-size: 15px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }.status i { animation: none; }
