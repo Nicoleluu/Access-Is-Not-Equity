@@ -201,19 +201,68 @@ export default function Home() {
 
         <article className="form material-form">
           <div className="form-index">03</div>
-          <div>
+          <div className="material-summary">
             <small>MATERIAL GESTURE · EARLY TEST</small>
             <h3>Bags of surrounding resources</h3>
-            <p>Transparent bags hold printed traces of access: tickets, programs, schools, salaries, job listings, companies, and cultural institutions. Each bag could represent one country’s design ecosystem.</p>
+            <p className="material-question">What resources surround an emerging designer before they approach AI?</p>
+            <p>Each transparent bag represents one country’s design ecosystem through collected printed evidence—not a fictional person or a complete portrait of everyone living there.</p>
+            <blockquote>The same AI tool can enter countries with very different educational, cultural, and professional conditions.</blockquote>
           </div>
           <div className="bag-sample">
             <div className="bag-handle" />
-            <p>LOCATION / 01</p>
+            <p>COUNTRY ECOSYSTEM / 01</p>
             {bagFragments.map(([title, note, code], index) => (
               <span className={`fragment f${index + 1}`} key={title}>
                 <b>{title}</b><small>{note}</small><i>{code}</i>
               </span>
             ))}
+          </div>
+          <div className="material-outline">
+            <section>
+              <small>UNIT OF COMPARISON</small>
+              <h4>One bag = one country</h4>
+              <p>Begin with two countries and use the same research categories for both. Taiwan and the United States are a possible pair, but not yet confirmed.</p>
+            </section>
+            <section>
+              <small>WHAT GOES INSIDE</small>
+              <div className="content-tags">
+                <span>design schools</span><span>tuition</span><span>museum tickets</span>
+                <span>exhibitions</span><span>maker spaces</span><span>design companies</span>
+                <span>job listings</span><span>job titles</span><span>designer salaries</span>
+                <span>workshops</span><span>professional events</span><span>language access</span>
+              </div>
+            </section>
+            <section>
+              <small>LABELING SYSTEM</small>
+              <p>Every fragment receives a small country code, category code, source, date, and value when relevant. The same category colors and labels repeat across every bag.</p>
+              <div className="label-key"><b>EDU</b><b>CUL</b><b>SPA</b><b>NET</b><b>JOB</b><b>INC</b></div>
+            </section>
+            <section>
+              <small>HOW COMPARISON WORKS</small>
+              <p>Differences become visible through quantity, size, density, cost, salary, variety, and missing categories. The bags should not simply label one country as “better.”</p>
+            </section>
+            <section>
+              <small>PHYSICAL SETUP</small>
+              <ul>
+                <li>Transparent plastic document or merchandise bags</li>
+                <li>Printed paper fragments at varied scales</li>
+                <li>Bags placed beside the vertical drawing</li>
+                <li>Country and category labels facing outward</li>
+                <li>No electricity or additional construction required</li>
+              </ul>
+            </section>
+            <section>
+              <small>VIEWER EXPERIENCE</small>
+              <p>Viewers look through overlapping evidence, compare the weight and density of each bag, and recognize that “access” is made from many surrounding conditions.</p>
+            </section>
+            <section>
+              <small>RELATIONSHIP TO THE DRAWING</small>
+              <p><b>Bags:</b> external resources distributed across countries.<br/><b>Drawing:</b> knowledge, judgment, confidence, and agency that may accumulate before a prompt.</p>
+            </section>
+            <section>
+              <small>OPEN FOR THE MEETING</small>
+              <p>Which countries should be compared? How many items make the difference legible? Should bags be sealed, handled, hung, or placed flat? How can missing resources appear without oversimplifying a country?</p>
+            </section>
           </div>
         </article>
       </section>

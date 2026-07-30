@@ -129,6 +129,18 @@ a { color: inherit; }
 .fragment { position: absolute; display: flex; flex-direction: column; min-width: 125px; padding: 13px; border: 1px solid; background: var(--paper); transform: rotate(-3deg); box-shadow: 3px 4px 0 rgba(22,22,22,.18); }
 .fragment b { font-size: 14px; }.fragment small { margin-top: 7px; font-size: 9px; }.fragment i { margin: 12px 0 0 auto; font-size: 8px; font-style: normal; border: 1px solid; border-radius: 50%; padding: 4px; }
 .f1{top:23%;left:8%;background:var(--signal)}.f2{top:18%;right:6%;transform:rotate(5deg)}.f3{top:43%;left:28%;transform:rotate(2deg);background:var(--blue)}.f4{bottom:16%;left:7%;transform:rotate(-5deg);background:var(--warm)}.f5{bottom:8%;right:8%;transform:rotate(3deg)}.f6{top:58%;right:4%;transform:rotate(-1deg)}
+.material-form { grid-template-columns: 80px minmax(280px,.8fr) minmax(460px,1.2fr); min-height: 1250px; align-items: start; }
+.material-summary .material-question { margin: 35px 0 18px; font: italic clamp(21px,2.2vw,34px)/1.05 Georgia,serif; }
+.material-summary blockquote { margin: 45px 0; padding: 18px 0; border-top: 1px solid; border-bottom: 1px solid; font-size: 18px; line-height: 1.35; }
+.material-form .bag-sample { margin-top: 0; }
+.material-outline { grid-column: 2 / -1; display: grid; grid-template-columns: 1fr 1fr; border: 1px solid; }
+.material-outline section { min-height: 230px; padding: 22px; border-right: 1px solid; border-bottom: 1px solid; }.material-outline section:nth-child(2n) { border-right: 0; }
+.material-outline small { font-size: 9px; letter-spacing: .13em; }.material-outline h4 { margin: 45px 0 15px; font-size: clamp(26px,3vw,46px); line-height: .95; letter-spacing: -.045em; }
+.material-outline p { max-width: none!important; margin: 42px 0 0; font-size: 14px!important; line-height: 1.42!important; }
+.content-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 36px; }.content-tags span { padding: 9px 12px; border: 1px solid; border-radius: 50%; font-size: 10px; text-transform: uppercase; }
+.content-tags span:nth-child(3n+1) { background: var(--signal); }.content-tags span:nth-child(3n+2) { background: var(--blue); }
+.label-key { margin-top: 35px; display: grid; grid-template-columns: repeat(6,1fr); border: 1px solid; }.label-key b { padding: 12px 4px; border-right: 1px solid; text-align: center; font-size: 9px; }.label-key b:last-child { border-right: 0; }
+.material-outline ul { margin: 35px 0 0; padding: 0; list-style: none; }.material-outline li { padding: 8px 0; border-top: 1px solid; font-size: 13px; }
 
 .open-section { padding: 100px 4vw 60px; background: var(--warm); }
 .open-section h2 { max-width: 1200px; margin: 85px 0 110px; }
@@ -151,6 +163,7 @@ footer a { color: var(--signal); }
   .definition-foot { flex-direction: column; gap: 12px; }
   .form { grid-template-columns: 45px 1fr; }.form > div:last-child { grid-column: 1 / -1; min-height: 450px; }.form h3 { margin-top: 28px; }
   .drawing-form { min-height: auto; }.drawing-summary { position: static; }.before-prompt-plan { grid-column: 1 / -1; }.drawing-support { grid-column: 1 / -1; }
+  .material-form { min-height: auto; }.material-form .bag-sample,.material-outline { grid-column: 1 / -1; }.material-outline { margin-top: 20px; }
   .open-grid { grid-template-columns: 1fr; }.open-grid p:nth-child(odd) { border-right: 0; }
 }
 @media (max-width: 480px) {
@@ -160,6 +173,7 @@ footer a { color: var(--signal); }
   .field { min-height: 1050px; }.country-field { min-height: auto; padding: 12px; }.country-column h3 { font-size: 48px; }
   .form { grid-template-columns: 30px 1fr; gap: 14px; }.bag-sample { margin-left: 0; margin-right: 0; }
   .before-prompt-plan li div { grid-template-columns: 1fr; }.before-prompt-plan li small { grid-column: 1; }.drawing-support { grid-template-columns: 1fr; }.drawing-support section { border-right: 0; }
+  .material-outline { grid-template-columns: 1fr; }.material-outline section { border-right: 0; }.label-key { grid-template-columns: repeat(3,1fr); }.label-key b:nth-child(3) { border-right: 0; }.label-key b:nth-child(-n+3) { border-bottom: 1px solid; }
   .open-grid p { grid-template-columns: 48px 1fr; font-size: 15px; }
 }
 @media (prefers-reduced-motion: reduce) {
