@@ -115,19 +115,63 @@ export default function Home() {
       </section>
 
       <section className="definition-section">
-        <p className="margin-label">ACCESSIBILITY IN THIS PROJECT</p>
-        <blockquote>
-          Accessibility means having the practical ability and support to
-          <em> reach AI, understand how it works, evaluate what it produces,</em>
-          and <em>use it toward a goal.</em>
+        <p className="margin-label">DEFINING THE PROJECT</p>
+        <h2>Three connected ideas that are not the same.</h2>
+
+        <div className="term-grid">
+          <article>
+            <small>01</small>
+            <h3>Access</h3>
+            <p>Being able to obtain and open the AI tool.</p>
+          </article>
+          <article>
+            <small>02</small>
+            <h3>Accessibility</h3>
+            <p>How possible it is for a person to learn, understand, navigate, evaluate, and use the tool within their actual circumstances.</p>
+          </article>
+          <article>
+            <small>03</small>
+            <h3>Equity</h3>
+            <p>Recognizing that people begin with different resources and providing different forms of preparation or support so those differences do not automatically determine what they can achieve.</p>
+          </article>
+        </div>
+
+        <div className="interpretation-head">
+          <p className="margin-label">WAYS TO UNDERSTAND ACCESSIBILITY</p>
+          <h2>The definition is still being developed through five connected views.</h2>
+        </div>
+
+        <div className="interpretation-list">
+          <article>
+            <h3>Accessibility as ability</h3>
+            <p>Whether someone can meaningfully use AI, not only reach it.</p>
+          </article>
+          <article>
+            <h3>Accessibility as conditions</h3>
+            <p>Whether someone&apos;s environment gives them the resources needed to use AI.</p>
+          </article>
+          <article>
+            <h3>Accessibility as preparation</h3>
+            <p>Whether someone has had opportunities to build the knowledge and confidence required before using AI.</p>
+          </article>
+          <article>
+            <h3>Accessibility as possibility</h3>
+            <p>What someone is realistically able to learn, create, or pursue with AI.</p>
+          </article>
+          <article>
+            <h3>Accessibility as a relationship</h3>
+            <p>The relationship between a person, the tool, and everything surrounding them.</p>
+          </article>
+        </div>
+
+        <blockquote className="definition-statement">
+          A tool may be available to many people, but what they can understand,
+          do, and pursue with it depends on the <em>preparation, knowledge,
+          support, and opportunities</em> available to them.
         </blockquote>
-        <p className="definition-context">
-          It is shaped not only by the tool itself, but also by the knowledge,
-          resources, opportunities, and support available to a person.
-        </p>
         <div className="definition-foot">
-          <span>Availability is one part.</span>
-          <span>Meaningful use is the measure.</span>
+          <span>Access opens the tool.</span>
+          <span>Accessibility shapes what becomes possible.</span>
         </div>
       </section>
 
