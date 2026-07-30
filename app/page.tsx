@@ -151,12 +151,6 @@ export default function Home() {
             <p className="drawing-question">What happens before a person reaches an AI prompt?</p>
             <p>The drawing looks at the layers that shape a person approaching AI—not the technical layers behind the AI system.</p>
             <blockquote>By the time someone reaches the same prompt box, their access has already been shaped by unequal experiences, knowledge, relationships, and opportunities.</blockquote>
-            <div className="drawing-meta">
-              <span><b>FORMAT</b>36 × 96 in. vertical print</span>
-              <span><b>FORM</b>Informal mixed-media data drawing</span>
-              <span><b>READING</b>Accumulation from context to interface</span>
-              <span><b>STATUS</b>Structure WIP; content not final</span>
-            </div>
           </div>
           <div className="before-prompt-plan" aria-label="Planning outline for the Before the Prompt vertical drawing">
             <header>
@@ -178,24 +172,6 @@ export default function Home() {
               <strong>≠</strong>
               <span>SAME ACCESS TO POSSIBILITY</span>
             </footer>
-          </div>
-          <div className="drawing-support">
-            <section>
-              <small>VISUAL APPROACH</small>
-              <p>Handwritten notes, scanned learning materials, prompt fragments, corrections, erased attempts, small data labels, transparent overlaps, dense and empty areas.</p>
-            </section>
-            <section>
-              <small>EVIDENCE TO COLLECT</small>
-              <p>Design syllabi, critique vocabulary, prompt revisions, annotated AI outputs, personal reflections, mentorship stories, and definitions of access and agency.</p>
-            </section>
-            <section>
-              <small>RELATIONSHIP TO THE BAGS</small>
-              <p><b>Drawing:</b> what may accumulate inside a person before AI.<br/><b>Bags:</b> how external design resources differ between countries.</p>
-            </section>
-            <section>
-              <small>OPEN FOR THE MEETING</small>
-              <p>Which three or four layers need the most emphasis? Should several pathways overlap? How can absence appear without representing a person as deficient?</p>
-            </section>
           </div>
         </article>
 
