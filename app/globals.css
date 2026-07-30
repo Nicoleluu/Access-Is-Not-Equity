@@ -35,7 +35,7 @@ a { color: inherit; }
   background-size: 8vw 8vw;
 }
 .kicker, .margin-label { margin: 0; font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
-.hero h1 { margin: auto 0 0; font-size: clamp(60px, 11.5vw, 180px); line-height: .82; letter-spacing: -.075em; font-weight: 500; }
+.hero h1 { margin: auto 0 0; font-size: clamp(58px, 8.5vw, 138px); line-height: .86; letter-spacing: -.07em; font-weight: 500; }
 .hero h1 span { color: var(--signal); }
 .turn { margin: 45px 0 auto 48%; font-size: clamp(25px, 4vw, 60px); line-height: .98; letter-spacing: -.045em; }
 .hero-foot { display: flex; justify-content: space-between; padding-top: 20px; border-top: 1px solid rgba(243,240,232,.55); font-size: 9px; letter-spacing: .14em; }
@@ -79,8 +79,9 @@ a { color: inherit; }
 .working-chain i { height: 1px; background: var(--signal); }
 
 .definition-section { padding: 110px 4vw 55px; background: var(--blue); }
-.definition-section blockquote { margin: 100px 0 120px; max-width: 1320px; font-size: clamp(45px, 7.6vw, 120px); line-height: .94; letter-spacing: -.065em; }
+.definition-section blockquote { margin: 100px 0 50px; max-width: 1450px; font-size: clamp(42px, 6.5vw, 105px); line-height: .96; letter-spacing: -.06em; }
 .definition-section em { font-family: Georgia, serif; font-weight: 400; }
+.definition-context { max-width: 850px; margin: 0 0 110px auto; font-size: clamp(20px, 2.1vw, 34px); line-height: 1.15; }
 .definition-foot { display: flex; justify-content: space-between; border-top: 1px solid; padding-top: 15px; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
 
 .forms-section { padding: 100px 4vw; }

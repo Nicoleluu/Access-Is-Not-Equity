@@ -32,10 +32,10 @@ export default function Home() {
       <section className="hero">
         <p className="kicker">A developing investigation by Nicole Lu</p>
         <h1>
-          You can open<br />
-          the same <span>tool.</span>
+          Accessibility starts<br />
+          before you open the <span>tool.</span>
         </h1>
-        <p className="turn">But what surrounds you<br />before you open it?</p>
+        <p className="turn">What prepares one person to use it<br />while another is left to catch up?</p>
         <div className="hero-foot">
           <span>AI + ACCESS + ENVIRONMENT</span>
           <a href="#question">follow the question ↓</a>
@@ -115,15 +115,19 @@ export default function Home() {
       </section>
 
       <section className="definition-section">
-        <p className="margin-label">A WORKING DEFINITION</p>
+        <p className="margin-label">ACCESSIBILITY IN THIS PROJECT</p>
         <blockquote>
-          Access is not only whether something is available. It is whether a
-          person can <em>find it, reach it, understand it, question it,</em> and
-          <em>use it.</em>
+          Accessibility means having the practical ability and support to
+          <em> reach AI, understand how it works, evaluate what it produces,</em>
+          and <em>use it toward a goal.</em>
         </blockquote>
+        <p className="definition-context">
+          It is shaped not only by the tool itself, but also by the knowledge,
+          resources, opportunities, and support available to a person.
+        </p>
         <div className="definition-foot">
-          <span>Technical access may be shared.</span>
-          <span>Starting conditions are not.</span>
+          <span>Availability is one part.</span>
+          <span>Meaningful use is the measure.</span>
         </div>
       </section>
 
