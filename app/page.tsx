@@ -181,12 +181,12 @@ export default function Home() {
             <small>MATERIAL GESTURE · EARLY TEST</small>
             <h3>Bags of surrounding resources</h3>
             <p className="material-question">What resources surround an emerging designer before they approach AI?</p>
-            <p>Each transparent bag represents one country’s design ecosystem through collected printed evidence—not a fictional person or a complete portrait of everyone living there.</p>
+            <p>The installation has two country sections. Within each section, every transparent bag represents one resource category through collected printed evidence.</p>
             <blockquote>The same AI tool can enter countries with very different educational, cultural, and professional conditions.</blockquote>
           </div>
           <div className="bag-sample">
             <div className="bag-handle" />
-            <p>COUNTRY ECOSYSTEM / 01</p>
+            <p>COUNTRY / 01 · CATEGORY / EDUCATION</p>
             {bagFragments.map(([title, note, code], index) => (
               <span className={`fragment f${index + 1}`} key={title}>
                 <b>{title}</b><small>{note}</small><i>{code}</i>
@@ -196,8 +196,8 @@ export default function Home() {
           <div className="material-outline">
             <section>
               <small>UNIT OF COMPARISON</small>
-              <h4>One bag = one country</h4>
-              <p>Begin with two countries and use the same research categories for both. Taiwan and the United States are a possible pair, but not yet confirmed.</p>
+              <h4>One bag = one category</h4>
+              <p>The display is divided into two country sections. Each section repeats the same set of labeled category bags so equivalent resources can be compared across the two countries.</p>
             </section>
             <section>
               <small>WHAT GOES INSIDE</small>
@@ -210,34 +210,12 @@ export default function Home() {
             </section>
             <section>
               <small>LABELING SYSTEM</small>
-              <p>Every fragment receives a small country code, category code, source, date, and value when relevant. The same category colors and labels repeat across every bag.</p>
+              <p>Each country section is clearly titled. Every bag is labeled by category, and every printed fragment includes its source, date, and value when relevant. Category labels repeat across both sections.</p>
               <div className="label-key"><b>EDU</b><b>CUL</b><b>SPA</b><b>NET</b><b>JOB</b><b>INC</b></div>
             </section>
             <section>
               <small>HOW COMPARISON WORKS</small>
-              <p>Differences become visible through quantity, size, density, cost, salary, variety, and missing categories. The bags should not simply label one country as “better.”</p>
-            </section>
-            <section>
-              <small>PHYSICAL SETUP</small>
-              <ul>
-                <li>Transparent plastic document or merchandise bags</li>
-                <li>Printed paper fragments at varied scales</li>
-                <li>Bags placed beside the vertical drawing</li>
-                <li>Country and category labels facing outward</li>
-                <li>No electricity or additional construction required</li>
-              </ul>
-            </section>
-            <section>
-              <small>VIEWER EXPERIENCE</small>
-              <p>Viewers look through overlapping evidence, compare the weight and density of each bag, and recognize that “access” is made from many surrounding conditions.</p>
-            </section>
-            <section>
-              <small>RELATIONSHIP TO THE DRAWING</small>
-              <p><b>Bags:</b> external resources distributed across countries.<br/><b>Drawing:</b> knowledge, judgment, confidence, and agency that may accumulate before a prompt.</p>
-            </section>
-            <section>
-              <small>OPEN FOR THE MEETING</small>
-              <p>Which countries should be compared? How many items make the difference legible? Should bags be sealed, handled, hung, or placed flat? How can missing resources appear without oversimplifying a country?</p>
+              <p>Place matching category bags in the same order within both country sections. Differences become visible through the amount, variety, cost, salary values, and types of evidence contained in corresponding bags.</p>
             </section>
           </div>
         </article>
