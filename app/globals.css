@@ -91,7 +91,7 @@ a { color: inherit; }
 .form h3 { margin: 45px 0 25px; max-width: 530px; font-size: clamp(38px, 5vw, 74px); font-weight: 500; line-height: .92; letter-spacing: -.06em; }
 .form > div:nth-child(2) p { max-width: 490px; font-size: 17px; line-height: 1.4; }
 .drawing-form { grid-template-columns: 80px minmax(260px,.72fr) minmax(470px,1.35fr); min-height: 1250px; align-items: start; }
-.drawing-summary { position: sticky; top: 86px; }
+.drawing-summary { position: static; align-self: start; }
 .drawing-summary .drawing-question { margin: 35px 0 18px; font: italic clamp(21px,2.2vw,34px)/1.05 Georgia,serif; }
 .drawing-summary blockquote { margin: 45px 0; padding: 18px 0; border-top: 1px solid; border-bottom: 1px solid; font-size: 18px; line-height: 1.35; }
 .drawing-meta { border-top: 1px solid; }
