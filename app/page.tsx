@@ -1,199 +1,193 @@
-const nav = [
-  ["question", "Question"], ["keywords", "Keywords"], ["fields", "Fields"], ["lineage", "Lineage"],
-  ["community", "Community"], ["situated", "Situated"], ["methods", "Methods"],
-  ["experiments", "Experiments"], ["language", "Visual"],
-  ["argument", "Argument"], ["outline", "Outline"], ["challenge", "Challenge"],
-  ["exhibition", "Exhibition"],
+const resources = [
+  { code: "EDU", name: "design education", note: "ways to learn the language of a field" },
+  { code: "CUL", name: "cultural exposure", note: "museums, exhibitions, archives, references" },
+  { code: "SPA", name: "space + tools", note: "libraries, software, studios, maker spaces" },
+  { code: "NET", name: "people + networks", note: "mentors, peers, introductions, belonging" },
+  { code: "TIM", name: "time + money", note: "the ability to practice, travel, and take risks" },
+  { code: "JOB", name: "opportunity", note: "internships, design firms, titles, salaries" },
 ];
 
-const factors = [
-  ["01", "Vocabulary", "Knowing the words that open a field."],
-  ["02", "References", "Knowing what has already been imagined."],
-  ["03", "Judgment", "Knowing when an answer is useful or wrong."],
-  ["04", "Mentorship", "Having someone who can reveal the next question."],
-  ["05", "Confidence", "Believing you are entitled to ask at all."],
+const bagFragments = [
+  ["ADMIT ONE", "museum ticket", "CUL"],
+  ["OPEN STUDIO", "maker-space address", "SPA"],
+  ["BFA / MFA", "art-school information", "EDU"],
+  ["DESIGNER I", "entry-level job listing", "JOB"],
+  ["PORTFOLIO NIGHT", "industry event", "NET"],
+  ["45 MIN", "travel time", "LOC"],
 ];
 
 export default function Home() {
   return (
-    <main>
+    <main id="top">
       <header className="site-header">
-        <a className="identity" href="#top">NICOLE LU · RESEARCH FOUNDATIONS</a>
-        <nav aria-label="Research sections">
-          {nav.map(([id, label]) => <a key={id} href={`#${id}`}>{label}</a>)}
+        <a className="wordmark" href="#top">ACCESS IS NOT EQUITY</a>
+        <span className="status"><i /> WORKING IDEA · 30 JUL 2026</span>
+        <nav aria-label="Page sections">
+          <a href="#question">Question</a>
+          <a href="#layers">Layers</a>
+          <a href="#forms">Forms</a>
         </nav>
       </header>
 
-      <section id="top" className="hero section dark">
-        <p className="eyebrow">Research Foundations + Project Outline · Draft 02</p>
-        <h1>ACCESS<br/><span>≠</span> EQUITY</h1>
-        <p className="hero-line">Everyone may reach the same AI. Not everyone can reach the same possibilities.</p>
-        <div className="equal-start" aria-label="Two equal access points leading to unequal outcomes">
-          <span>same tool</span><i/><span>different histories</span><i/><strong>unequal outcomes</strong>
+      <section className="hero">
+        <p className="kicker">A developing investigation by Nicole Lu</p>
+        <h1>
+          You can open<br />
+          the same <span>tool.</span>
+        </h1>
+        <p className="turn">But what surrounds you<br />before you open it?</p>
+        <div className="hero-foot">
+          <span>AI + DESIGN + LOCATION</span>
+          <a href="#question">follow the question ↓</a>
+        </div>
+        <div className="locator locator-a">40.7128° N</div>
+        <div className="locator locator-b">education</div>
+        <div className="locator locator-c">opportunity</div>
+      </section>
+
+      <section id="question" className="question-section">
+        <p className="margin-label">THE QUESTION / FOR NOW</p>
+        <div className="question-copy">
+          <h2>How does where you are shape what you can do with AI?</h2>
+          <p>
+            Logging in is one kind of access. Knowing what to ask, what to notice,
+            and where an answer might lead is another.
+          </p>
+        </div>
+        <div className="access-compare">
+          <article>
+            <small>01 / TECHNICAL ACCESS</small>
+            <strong>CAN I<br />OPEN IT?</strong>
+            <p>device · internet · account</p>
+          </article>
+          <div className="not-equal" aria-hidden="true">≠</div>
+          <article>
+            <small>02 / MEANINGFUL ACCESS</small>
+            <strong>CAN I<br />USE IT?</strong>
+            <p>knowledge · judgment · support · possibility</p>
+          </article>
+        </div>
+        <aside className="pencil-note">not a final definition yet → something I want to test</aside>
+      </section>
+
+      <section id="layers" className="layers-section">
+        <div className="layers-head">
+          <p className="margin-label">LOCATION AS A FIRST LAYER</p>
+          <h2>A place is more than a pin.</h2>
+          <p>
+            Location does not explain everything. It can make the systems around
+            a person visible: what is nearby, reachable, affordable, or missing.
+          </p>
+        </div>
+
+        <div className="field" aria-label="A conceptual field of resources surrounding a location">
+          <div className="map-grid" />
+          <div className="you-are-here"><b>YOU ARE HERE</b><span>?</span></div>
+          {resources.map((item, index) => (
+            <article className={`resource r${index + 1}`} key={item.code}>
+              <b>{item.code}</b>
+              <h3>{item.name}</h3>
+              <p>{item.note}</p>
+            </article>
+          ))}
+          <span className="radius radius-one" />
+          <span className="radius radius-two" />
+        </div>
+
+        <div className="working-chain">
+          <span>WHERE YOU ARE</span><i />
+          <span>WHAT YOU CAN REACH</span><i />
+          <span>WHAT YOU ENCOUNTER</span><i />
+          <span>WHAT BECOMES POSSIBLE</span>
         </div>
       </section>
 
-      <section id="question" className="section question">
-        <div className="section-no">01 / RESEARCH QUESTION</div>
-        <h2>When access to AI is widespread but the ability to benefit from it remains uneven, can AI truly be considered accessible?</h2>
-        <div className="question-grid">
-          <p>How does a person’s educational, cultural, geographic, and socioeconomic background shape what they can obtain from AI?</p>
-          <p>Does AI redistribute knowledge, or give greater advantages to people who already possess expertise?</p>
-          <p>What forms of prior knowledge does productive AI use quietly assume?</p>
+      <section className="definition-section">
+        <p className="margin-label">A WORKING DEFINITION</p>
+        <blockquote>
+          Access is not only whether something is available. It is whether a
+          person can <em>find it, reach it, understand it, question it,</em> and
+          <em>use it.</em>
+        </blockquote>
+        <div className="definition-foot">
+          <span>Technical access may be shared.</span>
+          <span>Starting conditions are not.</span>
         </div>
-        <div id="keywords" className="keywords-block">
-          <div className="keywords-title">KEYWORDS</div>
-          <div className="keywords" aria-label="Five keywords">
-            {['knowledge inequality','artificial intelligence','accessibility','agency','learning'].map((k,i)=><span key={k}>{String(i+1).padStart(2,'0')} {k}</span>)}
+      </section>
+
+      <section id="forms" className="forms-section">
+        <div className="forms-intro">
+          <p className="margin-label">THREE CONNECTED FORMS</p>
+          <h2>Not three copies of the same information.</h2>
+        </div>
+
+        <article className="form website-form">
+          <div className="form-index">01</div>
+          <div>
+            <small>THIS WEBSITE</small>
+            <h3>An invitation into the question</h3>
+            <p>Informal, interactive, and evolving. A place to feel how resources accumulate before reading a conclusion.</p>
           </div>
+          <div className="browser-sample" aria-hidden="true">
+            <div><i /><i /><i /></div>
+            <span>what do you have access to?</span>
+            <b>COLLECT / CONNECT / NOTICE</b>
+          </div>
+        </article>
+
+        <article className="form drawing-form">
+          <div className="form-index">02</div>
+          <div>
+            <small>PRINTED VERTICAL DRAWING · IN DEVELOPMENT</small>
+            <h3>A geography of design resources</h3>
+            <p>A long map or data field comparing what can be reached from different starting locations. The specific locations and dataset still need to be chosen.</p>
+          </div>
+          <div className="map-sample" aria-label="Conceptual sketch for the printed drawing">
+            <span className="map-line line-a" /><span className="map-line line-b" />
+            <i className="dot d1" /><i className="dot d2" /><i className="dot d3" />
+            <i className="dot d4" /><i className="dot d5" /><i className="dot d6" />
+            <b>RESOURCE DENSITY?</b>
+            <em>TRAVEL TIME?</em>
+            <strong>WHAT SHOULD BE MAPPED?</strong>
+          </div>
+        </article>
+
+        <article className="form material-form">
+          <div className="form-index">03</div>
+          <div>
+            <small>MATERIAL GESTURE · EARLY TEST</small>
+            <h3>Bags of surrounding resources</h3>
+            <p>Transparent bags hold printed traces of access: tickets, addresses, programs, schools, salaries, jobs, and travel times. Each bag could represent one location.</p>
+          </div>
+          <div className="bag-sample">
+            <div className="bag-handle" />
+            <p>LOCATION / 01</p>
+            {bagFragments.map(([title, note, code], index) => (
+              <span className={`fragment f${index + 1}`} key={title}>
+                <b>{title}</b><small>{note}</small><i>{code}</i>
+              </span>
+            ))}
+          </div>
+        </article>
+      </section>
+
+      <section className="open-section">
+        <p className="margin-label">STILL OPEN</p>
+        <h2>This project is not trying to solve unequal access yet.</h2>
+        <div className="open-grid">
+          <p><b>WHO?</b><span>Which emerging designers am I talking about?</span></p>
+          <p><b>WHERE?</b><span>Which two or three locations make a meaningful comparison?</span></p>
+          <p><b>WHAT?</b><span>Which resources actually shape meaningful AI use?</span></p>
+          <p><b>HOW?</b><span>How can I compare without reducing people to profiles?</span></p>
         </div>
+        <p className="closing-line">For now, I am learning how to see the conditions around the tool.</p>
       </section>
 
-      <section id="fields" className="section dark fields">
-        <div className="section-no">02 / INTERSECTING FIELDS</div>
-        <div className="orbit" aria-label="Intersecting research fields">
-          <div className="core">WHO CAN<br/>BENEFIT?</div>
-          <span className="o1">Human AI interaction</span><span className="o2">Education</span>
-          <span className="o3">Knowledge equity</span><span className="o4">Critical AI studies</span>
-          <span className="o5">Design research</span><span className="o6">Participatory design</span>
-        </div>
-      </section>
-
-      <section id="lineage" className="section lineage">
-        <div className="section-no">03 / HISTORICAL LINEAGE</div>
-        <h2>Each new medium promises to democratize knowledge.</h2>
-        <div className="timeline">
-          {[["PUBLIC LIBRARY","information"],["OPEN SOURCE","tools"],["SEARCH","discovery"],["MOOCs","instruction"],["GENERATIVE AI","assistance"],["NOW","possibility?"]].map(([a,b],i)=><div key={a}><b>{String(i+1).padStart(2,'0')}</b><strong>{a}</strong><span>{b}</span></div>)}
-        </div>
-        <p className="large-note">Availability expanded. Unequal starting conditions remained.</p>
-      </section>
-
-      <section id="community" className="section community">
-        <div className="section-no">04 / COMMUNITY OF PRACTICE</div>
-        <h2>From explaining AI to questioning who can use explanation.</h2>
-        <div className="practice-grid">
-          <article className="precedent"><small>PRECEDENT</small><h3><a className="reference-link" href="https://pair.withgoogle.com/" target="_blank" rel="noreferrer">Google PAIR <span>↗</span></a></h3><p>Makes machine learning concepts understandable through explorable explanations.</p><b>EXTEND ↗</b></article>
-          <article><small>CRITICAL PEDAGOGY</small><h3><a className="reference-link" href="https://www.paulofreire.org/" target="_blank" rel="noreferrer">Paulo Freire <span>↗</span></a><br/><a className="reference-link" href="https://www.berea.edu/centers/the-bell-hooks-center" target="_blank" rel="noreferrer">bell hooks <span>↗</span></a></h3><p>Learning as agency, dialogue, and the capacity to question.</p></article>
-          <article><small>DESIGN JUSTICE</small><h3><a className="reference-link" href="https://mitpress.mit.edu/9780262043458/design-justice/" target="_blank" rel="noreferrer">Sasha Costanza Chock <span>↗</span></a></h3><p>Challenges who benefits from design and who participates in its decisions.</p></article>
-          <article><small>CRITICAL AI</small><h3><a className="reference-link" href="https://www.ruhabenjamin.com/" target="_blank" rel="noreferrer">Ruha Benjamin <span>↗</span></a><br/><a className="reference-link" href="https://safiyaunoble.com/" target="_blank" rel="noreferrer">Safiya Noble <span>↗</span></a></h3><p>Shows how technical systems reproduce existing structures of inequality.</p></article>
-        </div>
-        <p className="position">My position: an extension and critique of <em>Measuring Fairness</em>, moving from unequal model outcomes to unequal human AI relationships.</p>
-      </section>
-
-      <section id="situated" className="section dark situated">
-        <div className="section-no">05 / SITUATED TECHNOLOGY</div>
-        <p className="quote">“Entering a design institution did not simply give me more information. It revealed possibilities, vocabularies, references, and standards of judgment that had previously been difficult to access.”</p>
-        <div className="two-place"><div><b>TAIWAN</b><span>where my questions began</span></div><div><b>NEW YORK</b><span>where hidden structures became visible</span></div></div>
-        <p className="situated-note">This research grows from moving between educational contexts and recognizing that knowledge is not only information. It is also exposure, mentorship, language, confidence, and belonging.</p>
-      </section>
-
-      <section id="methods" className="section methods">
-        <div className="section-no">06 / METHODS</div>
-        <h2>Study the distance between access and agency.</h2>
-        <ol>
-          <li><b>COMPARE</b><span>Observe how people with different prior knowledge approach the same AI task.</span></li>
-          <li><b>TRACE</b><span>Map the invisible vocabulary, references, and judgment required to use an answer.</span></li>
-          <li><b>LISTEN</b><span>Interview learners across educational and geographic contexts.</span></li>
-          <li><b>PROTOTYPE</b><span>Test AI interactions that teach through questions instead of producing finished answers.</span></li>
-          <li><b>REFLECT</b><span>Evaluate whether an interaction expands agency, not only output quality.</span></li>
-        </ol>
-      </section>
-
-      <section id="experiments" className="section dark experiments">
-        <div className="section-no">07 / COMPUTATIONAL DESIGN EXPERIMENTS</div>
-        <h2>The same prompt is never the same starting point.</h2>
-        <div className="paths">
-          <div className="path a"><span>USER A</span><i/><b>“Make something.”</b><i/><strong>ONE OUTPUT</strong></div>
-          <div className="path b"><span>USER B</span><i/><b>vocabulary + references + critique</b><i/><strong>NEW QUESTIONS</strong></div>
-        </div>
-        <div className="factor-list">{factors.map(([n,a,b])=><div key={n}><b>{n}</b><strong>{a}</strong><span>{b}</span></div>)}</div>
-        <p className="caption">Experiment 01 proposal: visualize how invisible forms of prior knowledge alter a conversation with the same AI system.</p>
-      </section>
-
-      <section id="language" className="section visual-language">
-        <div className="section-no">08 / VISUAL REPRESENTATION</div>
-        <h2>A language of equal beginnings and diverging paths.</h2>
-        <div className="swatches"><span/><span/><span/><span/></div>
-        <p>Rigid grids represent the promise of universal access. Expanding gaps, incomplete lines, and uneven densities expose the different conditions hidden behind that promise.</p>
-      </section>
-
-      <section id="argument" className="section argument">
-        <div className="section-no">09 / RHETORICAL ARGUMENT</div>
-        <h2>AI does not democratize knowledge simply by making information available.</h2>
-        <p>Without addressing unequal starting conditions, AI may amplify the advantages of people who already know what to ask, how to evaluate an answer, and what possibilities exist.</p>
-      </section>
-
-      <section id="outline" className="section dark outline">
-        <div className="section-no">10 / POTENTIAL CAPSTONE</div>
-        <small>NOT A SOLUTION · A DIRECTION</small>
-        <h2>An experimental AI learning environment responsive to unequal starting conditions.</h2>
-        <p>Rather than measuring success through polished outputs, it would investigate whether AI can help people develop vocabulary, judgment, confidence, and the ability to form their own questions.</p>
-        <div className="future">ACCESS <i/> ORIENTATION <i/> EXPLORATION <i/> JUDGMENT <i/> AGENCY</div>
-      </section>
-
-      <section id="challenge" className="section challenge">
-        <div className="section-no">11 / THE CHALLENGE</div>
-        <div className="challenge-grid">
-          <h2>How can I study inequality without flattening different lives into user types?</h2>
-          <ul><li>Recruit participants beyond my immediate academic network.</li><li>Define “benefit” without relying only on output quality.</li><li>Build with AI without reproducing its assumptions.</li><li>Keep the research situated while connecting it to wider structures.</li><li>Learn qualitative research and responsible prototyping methods.</li></ul>
-        </div>
-      </section>
-
-      <section id="exhibition" className="section exhibition">
-        <div className="section-no">12 / EXHIBITION PLAN · CONFIRMED</div>
-        <div className="exhibition-intro">
-          <h2>Different knowledge.<br/>Different starting points.</h2>
-          <p>A collective mural and a physical population make the universal user impossible.</p>
-        </div>
-        <div className="proposal-grid">
-          <article className="drawing-plan">
-            <small>01 / VERTICAL MURAL · CONFIRMED</small>
-            <h2>A Crowd of Knowledge</h2>
-            <p className="proposal-claim">Everyone arrives with knowledge. Not every form is recognized equally.</p>
-            <a className="wip-preview" href="https://drive.google.com/file/d/1bBB-Lwr0elVDcYkSyRm95Fyuw-bcmrub/view?usp=sharing" target="_blank" rel="noreferrer">
-              <img src="mural-wip-02.png" alt="Planning outline for a vertical mural with labeled composition zones, figure placeholders, and content notes" />
-              <span>OPEN PLANNING OUTLINE WIP 02 ↗</span>
-            </a>
-            <a className="figma-link" href="https://www.figma.com/design/DnreENS6YElFGscQWENnEP" target="_blank" rel="noreferrer">EDITABLE FIGMA OUTLINE ↗</a>
-            <div className="confirmation-strip">
-              <span><b>36 × 96 IN</b> vertical</span>
-              <span><b>FULL COLOR</b> digital collage</span>
-              <span><b>MATTE</b> uncoated bond</span>
-              <span><b>INSTALL</b> rail clips</span>
-            </div>
-          </article>
-          <article className="material-plan">
-            <small>02 / MATERIAL GESTURE · CONFIRMED</small>
-            <h2>A Population of Starting Points</h2>
-            <p className="proposal-claim">Composite profiles make different backgrounds physical.</p>
-            <div className="profile-stage" aria-label="Setup mockup showing composite profile cards arranged as a physical population">
-              {[
-                ["01","TAIPEI","LANGUAGE · CRAFT · CARE"],
-                ["02","QUEENS","WORK · COMMUNITY · BILINGUAL"],
-                ["03","BROOKLYN","CODE · GAMES · SELF TAUGHT"],
-                ["04","BRONX","TEACHING · FAMILY · MEDIA"],
-                ["05","NEW YORK","DESIGN · SCHOOL · MENTORSHIP"],
-                ["06","ONLINE","FANDOM · VIDEO · MAKING"],
-              ].map(([n,place,knowledge])=>
-                <div className="profile-card" key={n}>
-                  <b>{n}</b><span>{place}</span><small>{knowledge}</small>
-                </div>
-              )}
-              <p>COMPOSITE PROFILES / DIFFERENT KNOWLEDGE CONFIGURATIONS</p>
-            </div>
-            <div className="setup-plan">
-              <div><b>PLACE</b><span>Beside mural on one shared table</span></div>
-              <div><b>MAKE</b><span>30–50 printed composite profile cards</span></div>
-              <div><b>ARRANGE</b><span>One continuous field, not two ranked groups</span></div>
-              <div><b>VIEWER</b><span>Pick up and compare different starting conditions</span></div>
-              <div><b>POWER</b><span>None required</span></div>
-              <div><b>SETUP</b><span>10 minutes; cards secured with museum putty</span></div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <footer><span>ACCESS ≠ EQUITY</span><span>Nicole Lu · CDP · 2026</span><a href="#top">Back to top ↑</a></footer>
+      <footer>
+        <span>ACCESS IS NOT EQUITY</span>
+        <span>A WORK IN PROGRESS</span>
+        <a href="#top">TOP ↑</a>
+      </footer>
     </main>
   );
 }
