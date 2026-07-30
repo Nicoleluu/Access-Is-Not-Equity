@@ -13,7 +13,7 @@ const bagFragments = [
   ["BFA / MFA", "art-school information", "EDU"],
   ["DESIGNER I", "entry-level job listing", "JOB"],
   ["PORTFOLIO NIGHT", "industry event", "NET"],
-  ["45 MIN", "travel time", "LOC"],
+  ["AVG. PAY", "designer salary", "INC"],
 ];
 
 export default function Home() {
@@ -48,10 +48,11 @@ export default function Home() {
       <section id="question" className="question-section">
         <p className="margin-label">THE QUESTION / FOR NOW</p>
         <div className="question-copy">
-          <h2>How does where you are shape what you can do with AI?</h2>
+          <h2>How does the country you live in shape what you can do with AI?</h2>
           <p>
             Logging in is one kind of access. Knowing what to ask, what to notice,
-            and where an answer might lead is another.
+            and where an answer might lead is another. Those abilities develop
+            inside unequal educational, cultural, and professional systems.
           </p>
         </div>
         <div className="access-compare">
@@ -72,33 +73,40 @@ export default function Home() {
 
       <section id="layers" className="layers-section">
         <div className="layers-head">
-          <p className="margin-label">LOCATION AS A FIRST LAYER</p>
-          <h2>A place is more than a pin.</h2>
+          <p className="margin-label">COUNTRY AS A FIRST LAYER</p>
+          <h2>The same tool enters different ecosystems.</h2>
           <p>
-            Location does not explain everything. It can make the systems around
-            a person visible: what is nearby, reachable, affordable, or missing.
+            I am not comparing distances between places. I am asking how the
+            country someone lives in shapes the design resources and pathways
+            available to them.
           </p>
         </div>
 
-        <div className="field" aria-label="A conceptual field of resources surrounding a location">
+        <div className="field country-field" aria-label="A conceptual comparison of two national design ecosystems">
           <div className="map-grid" />
-          <div className="you-are-here"><b>YOU ARE HERE</b><span>?</span></div>
-          {resources.map((item, index) => (
-            <article className={`resource r${index + 1}`} key={item.code}>
-              <b>{item.code}</b>
-              <h3>{item.name}</h3>
-              <p>{item.note}</p>
-            </article>
-          ))}
-          <span className="radius radius-one" />
-          <span className="radius radius-two" />
+          <div className="same-tool"><span>SAME GENERATIVE AI PLATFORM</span><b>ONE INTERFACE</b></div>
+          <div className="country-column country-a">
+            <header><small>POSSIBLE STUDY / 01</small><h3>TAIWAN</h3><p>national + regional context</p></header>
+            <div className="country-resources">
+              {resources.map((item) => <span key={item.code}><b>{item.code}</b>{item.name}</span>)}
+            </div>
+            <footer>COLLECT DATA / FIND PATTERNS / DO NOT ASSUME</footer>
+          </div>
+          <div className="country-column country-b">
+            <header><small>POSSIBLE STUDY / 02</small><h3>UNITED STATES</h3><p>national + regional context</p></header>
+            <div className="country-resources">
+              {resources.map((item) => <span key={item.code}><b>{item.code}</b>{item.name}</span>)}
+            </div>
+            <footer>USE THE SAME CATEGORIES / COMPARE CONDITIONS</footer>
+          </div>
+          <div className="field-note">possible comparison — countries not confirmed yet</div>
         </div>
 
         <div className="working-chain">
-          <span>WHERE YOU ARE</span><i />
-          <span>WHAT YOU CAN REACH</span><i />
-          <span>WHAT YOU ENCOUNTER</span><i />
-          <span>WHAT BECOMES POSSIBLE</span>
+          <span>COUNTRY CONTEXT</span><i />
+          <span>DESIGN ECOSYSTEM</span><i />
+          <span>KNOWLEDGE + OPPORTUNITY</span><i />
+          <span>MEANINGFUL AI USE</span>
         </div>
       </section>
 
@@ -139,16 +147,14 @@ export default function Home() {
           <div className="form-index">02</div>
           <div>
             <small>PRINTED VERTICAL DRAWING · IN DEVELOPMENT</small>
-            <h3>A geography of design resources</h3>
-            <p>A long map or data field comparing what can be reached from different starting locations. The specific locations and dataset still need to be chosen.</p>
+            <h3>A comparison of design ecosystems</h3>
+            <p>A long data field comparing the resources and professional pathways available in different countries—not the distance between them. The country pair and final dataset still need to be confirmed.</p>
           </div>
-          <div className="map-sample" aria-label="Conceptual sketch for the printed drawing">
-            <span className="map-line line-a" /><span className="map-line line-b" />
-            <i className="dot d1" /><i className="dot d2" /><i className="dot d3" />
-            <i className="dot d4" /><i className="dot d5" /><i className="dot d6" />
-            <b>RESOURCE DENSITY?</b>
-            <em>TRAVEL TIME?</em>
-            <strong>WHAT SHOULD BE MAPPED?</strong>
+          <div className="map-sample ecosystem-sample" aria-label="Conceptual sketch for a printed comparison of national design ecosystems">
+            <div className="sample-tool">SAME AI TOOL</div>
+            <div className="sample-country"><b>COUNTRY / 01</b><span>EDUCATION</span><span>INDUSTRY</span><span>JOBS</span><span>SALARY</span><span>CULTURE</span></div>
+            <div className="sample-country"><b>COUNTRY / 02</b><span>EDUCATION</span><span>INDUSTRY</span><span>JOBS</span><span>SALARY</span><span>CULTURE</span></div>
+            <strong>WHAT DIFFERENCES BECOME VISIBLE?</strong>
           </div>
         </article>
 
@@ -157,7 +163,7 @@ export default function Home() {
           <div>
             <small>MATERIAL GESTURE · EARLY TEST</small>
             <h3>Bags of surrounding resources</h3>
-            <p>Transparent bags hold printed traces of access: tickets, addresses, programs, schools, salaries, jobs, and travel times. Each bag could represent one location.</p>
+            <p>Transparent bags hold printed traces of access: tickets, programs, schools, salaries, job listings, companies, and cultural institutions. Each bag could represent one country’s design ecosystem.</p>
           </div>
           <div className="bag-sample">
             <div className="bag-handle" />
@@ -176,7 +182,7 @@ export default function Home() {
         <h2>This project is not trying to solve unequal access yet.</h2>
         <div className="open-grid">
           <p><b>WHO?</b><span>Which emerging designers am I talking about?</span></p>
-          <p><b>WHERE?</b><span>Which two or three locations make a meaningful comparison?</span></p>
+          <p><b>WHERE?</b><span>Which two countries make a responsible and meaningful comparison?</span></p>
           <p><b>WHAT?</b><span>Which resources actually shape meaningful AI use?</span></p>
           <p><b>HOW?</b><span>How can I compare without reducing people to profiles?</span></p>
         </div>
